@@ -1,6 +1,6 @@
 // Problem-2
-function removeDuplicates(nums: number[]): number[] {
-    const result = nums.filter((num, i) => nums.indexOf(num) === i);
+function removeDuplicates(arr: number[]): number[] {
+    const result = arr.filter((num, i) => arr.indexOf(num) === i);
     return result;
 };
 
