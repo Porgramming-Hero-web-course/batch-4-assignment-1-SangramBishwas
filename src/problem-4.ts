@@ -1,15 +1,15 @@
-interface Circle {
+type Circle = {
     shape: string,
     radius: number
 }
 
-interface Rectangle {
+type Rectangle = {
     shape: string,
     height: number,
     width: number
 }
 
-const getResult = (shape: Circle | Rectangle) => {
+const calculateShapeArea = (shape: Circle | Rectangle) => {
     if ("radius" in shape) {
         const radius = shape.radius;
         const areaOfCircle = Math.PI * radius * radius;
@@ -22,15 +22,10 @@ const getResult = (shape: Circle | Rectangle) => {
     }
 };
 
-const circle: Circle = {
-    shape: "Circle",
-    radius: 5
-};
+const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
 
-const rectangle: Rectangle = {
-    shape: "Rectangle",
-    height: 3,
-    width: 5
-};
-
-getResult(rectangle);
+const rectangleArea = calculateShapeArea({
+    shape: "rectangle",
+    width: 4,
+    height: 6,
+  });
