@@ -5,4 +5,4 @@ const getProperty = <O, K extends keyof O>(object: O, key: K) => {
 }
 
 const person = { name: "Alice", age: 30 };
-console.log(getProperty(person, "age"));
+console.log(getProperty(person, "name"));
