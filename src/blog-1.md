@@ -45,6 +45,6 @@ const samsungMobile: DeviceDetails = {
   camera: '50 MP'
 };
 
-#Benefits
+##Benefits
 
 Union and intersection types are not just fancy jargon; they’re essential tools for writing robust, maintainable code. By leveraging these features, we catch bugs early in the development process and make our code more adaptable and understandable. Whether you’re a seasoned developer or just starting, mastering union and intersection types in TypeScript will undoubtedly elevate your programming prowess.
